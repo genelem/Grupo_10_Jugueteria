@@ -1,115 +1,45 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <%- include('./partials/head.ejs') %>
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <script defer src="js/slide.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/stylesheets/navbar.css" />
+    <link rel="stylesheet" href="/stylesheets/mainIcons.css" />
+    <link rel="stylesheet" href="/stylesheets/slideHeader.css" />
+    <link rel="stylesheet" href="/stylesheets/edades.css" />
+    <link rel="stylesheet" href="/stylesheets/destacados.css" />
 
     <title>Playground-Jugueteria</title>
-</head>
+  </head>
 
-<body>
-    <!--Cabecera del sitio-->
-    <%- include('./partials/header.ejs') %>
-    <!--Logo, buscador y carrito de compras-->
-    <main class="container-main">
-        
-            <a href="/">
-                <img src="images/Design/logo.png"  alt="Logo Playground Jugueteria"></img>
-            </a>
-       
-        <div class="buscar-wrapper">
-            <input class="buscador-box" type="search" text="Search" placeholder="Buscar producto">
-            <button type="button" class="fas fa-search" id="lupa"></button>
-        </div>
-        <div class="container-carrito">
-            <div class="carro">
-                <a href="products/productCart">
-                    <i class="fas fa-shopping-cart" id="icono-carrito">
-                        <div class="box-carrito"></div>
-                    </i>
-                </a>
-            </div>
-        </div>
-    </main>
-    <!--Menú-->
-    <nav class="main-navbar">
-        
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#marcas">Marcas</a></li>
-            <li><a href="#">Edades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+  <body>
+    <!--Imagen de fondo-->
 
+    <!--Cabecera del sitio, Logo, buscador y carrito de compra-->
 
+    <%- include('partials/navbar.ejs') %> <%-
+    include('partials/slideHeader.ejs') %>
 
-    <!--Slide seccion-->
-   
-    <div id="window">
-        <div id="slide-container">
-            <div class="slides">
-          
-    <!-- First image --> 
-                <img class="slide" src="images/barbie-slide1.jpeg"> 
-            </div>
-        
-    <!-- Second image --> 
-            <div class="slides">
-                <img class="slide" src="images/spiderman-slide2.jpeg"> 
-            </div>
-        
-     <!-- Third image --> 
-        <div class="slides">
-                <img class="slide" src="images/frozen-slide3.jpeg"> 
-            </div>
-            <a id="previous" class="arrow-left">&#10094</a>
-            <a id="next" class="arrow">&#10095</a>
-            <div id="text-bar">
-                <p id="place"></p>
-            </div>
-        </div>
-        <div id="dotsContainer"></div>
-    </div>
-    
+    <!--Iconos secciones-->
+    <%- include('partials/mainIcons.ejs') %>
 
+    <!-- Seccion edades -->
+    <%- include('partials/edades.ejs') %>
+    <!-- Second image -->
+    <%- include('partials/destacados.ejs') %>
+    <!-- Third image -->
 
-
-
-    <div class="info-destacados">
-        <h3>
-            PRODUCTOS DESTACADOS
-        </h3>
-    </div>
     <!--Productos Destacados-->
-    <section class="destacados">
-        <div class="destacados-box1">
-            <img src="images/destacado-frozen.jpeg" alt="Imagen frozen">
-            <img src="images/destacado-toyStory.jpeg" alt="Imagen toyStory">
-            <img src="images/destacado-spiderman.jpeg" alt="Imagen spiderman">
-            <img src="images/destacado-superman.jpeg" alt="Imagen superman">
-            <img src="images/destacado-starwars.jpeg" alt="Imagen star">
-            <a href="/productDetail">
-                <img src="images/muneca.jpg" alt="Imagen mariobros">
-            </a>
-            
-        </div>
-        <div class="destacados-box2">
-            
-        </div>
-    </section>
 
     <!--Nuestras Marcas-->
-    <section id="marcas">
-        <h3>
-            NUESTRAS MARCAS
-        </h3>
-      
 
-    </section>
-    <%- include('./partials/slider_dinamico.ejs') %>
     <!--Footer-->
-    <%- include('./partials/footer.ejs') %>
-</body>
+  </body>
 </html>

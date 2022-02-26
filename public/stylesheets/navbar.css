@@ -1,0 +1,295 @@
+
+/**************************/
+.header {
+    position: sticky;
+    top: 0;
+}
+.container-navbar {
+    height: 12em ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgba(65, 64, 64, 0.5);
+    filter: opacity(85%);
+}
+.container-navbar .logo {
+    object-fit: cover;
+}
+
+
+.container-navbar .header1 {
+    display: inline-flex;
+    width: 98%;
+    flex: wrap;
+    align-content: stretch;
+    justify-content:space-between;
+    align-items:center;
+    margin: 15px;
+}
+
+.container-navbar .carrito-header img{
+    
+    max-width: 1.5em;
+    max-height: 1.5em;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.container-navbar .header1 img {
+    width: 200px;
+    height: 50px;
+}
+.container-navbar .inputBuscar {
+    width: 20em;
+    border-radius: 20px;
+    border: none;
+    align-items:center;
+    justify-content:center;
+}
+
+.container-navbar .button-header {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-navbar .btn-ingresar {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.container-navbar .btn-registrar {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 90px;
+    height:30px;
+    border-radius:15px;
+    box-shadow: inset 0;
+    background-color:rgb(0, 94, 255);
+    align-items: center;
+    justify-content:center;
+    text-decoration: none; 
+    border: none;
+    cursor: pointer;
+}
+.container-navbar .btn-registrar:hover {
+    background-color: black;
+}
+
+/********************************/
+/*           BTN SEARCH         */
+/********************************/
+     
+input {
+        width: 40%;
+        padding: 12px 24px;
+        background-color: white;
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid #ffffff;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+}
+
+        input::placeholder {
+            color: color(#575756 a(0.8));
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+        }
+        input:hover,
+        input:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #ffffff;
+            border-radius: 0;
+            background-position: 100% center;
+            color: #fff
+        }
+/********************************/
+/*           MENU               */
+/********************************/
+
+.container-navbar .menu {
+    width: 98%;
+    flex: wrap;
+    align-content: stretch;
+    justify-content:space-between;
+    align-items:center;
+    margin: 15px;
+}
+.container-navbar .menu ul>li {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    margin: 35px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+.container-navbar .menu ul>li:hover {
+}
+
+.container-navbar .menu .btn-menu{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: 90px;
+    height:30px;
+    border-radius:15px;
+    box-shadow: inset 0;
+    background-color:transparent;
+    align-items: center;
+    justify-content:center;
+    text-decoration: none; 
+    border: none;
+    cursor: pointer;
+}
+.container-navbar .menu .btn-menu:hover{
+    background-color: #FFFEAD;
+    color: black;
+}
+
+/*Hamburguer menu*****/
+.hamburguer-button {
+    text-align:center;
+    background-color:rgb(167, 165, 165);
+    color:white;
+    margin:auto;
+    display:block;
+    width:100px;
+    border-radius: 8px;
+    padding:15px 0px;
+    font-size:18px;
+    }
+.hamburguer-button:hover{
+    background-color:black;
+}
+
+@media (min-width: 361px) {
+    .menu,
+    .slide-header img,
+    .button-header .btn-ingresar,
+    .button-header .btn-registrar {
+        display:none;
+        padding:0;
+        margin:0;
+        justify-content: space-between;
+     }  
+     .hamburguer-button {
+       position: absolute;
+       left: 30px;
+       top: 100px;
+       
+     }  
+     /* .container-navbar {
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,40,1) 36%, rgba(0,212,255,1) 100%); 
+    }
+     */
+    
+}
+@media (min-width: 768px) {
+    .menu,
+    .slide-header img,
+    .button-header .btn-ingresar,
+    .button-header .btn-registrar {
+        display:none;
+        padding:0;
+        margin:0;
+        justify-content: space-between;
+    }   
+    /* .container-navbar {
+        background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,40,1) 36%, rgba(0,212,255,1) 100%); 
+    } */
+}
+@media (min-width: 1028px) {
+    .menu,
+    .slide-header img,
+    .button-header .btn-ingresar,
+    .button-header .btn-registrar {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px;
+    } 
+    .hamburguer-button {
+        display: none;
+    }
+    .slide-header img {
+        width: 100%;
+    }
+    .button-header .btn-ingresar {
+        margin: 10px;
+    }
+    .container-navbar {
+        background-color: rgba(65, 64, 64, 0.5);
+        filter: opacity(85%);
+        position: sticky;
+        top: 0px;
+    }
+   
+}
+
+/********************************/
+/*           MAIN-HEADER        */
+/********************************/
+
+.slide-header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.slide-header img {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin-top: -90px;
+ }
+ 
+ @media only screen and (max-width: 1024) {
+    Img 
+    {
+      width: 100%;
+      max-width: 100%;
+    }
+ }
+
+ /* CSS para posicionar el bade cerca del carrito*/
+.cart {
+    position: relative;
+  }
+  
+  #cart_menu_num {
+    position: relative;
+    top: -18px;
+    left: 35px;
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2px;
+  }
+

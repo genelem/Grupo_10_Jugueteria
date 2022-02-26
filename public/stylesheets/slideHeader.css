@@ -1,0 +1,26 @@
+.slide-header {
+    display: flex;
+    margin: 0px;
+    /* width: 100%;
+    height: auto; */
+    object-fit:cover;
+    border: 1px solid red;
+    /* animation-name: slidering;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; */
+}
+
+/********************************/
+/*           SLIDE HEADER       */
+/*******************************/
+  /* @keyframes slidering {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+} */

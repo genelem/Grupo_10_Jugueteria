@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+p,
+a,
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-section {
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.container-section .card {
+    width: 18em;
+    height: 18em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-section i {
+    font-size:100px;
+    color:rgb(255, 255, 255); 
+}
+.container-section button {
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    
+}
+.container-section .btn-uno {
+    background-color:#5AAA95;
+    border: none;
+}
+.container-section .btn-dos {
+    background-color:#B8336A;
+    border: none;
+}
+.container-section .btn-tres {
+    background-color:#F2A654;
+    border: none;
+}
+.container-section .btn-cuatro {
+    background-color:#17A5F4;
+    border: none;
+}
+.container-section p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    margin: 1em;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.barra-separacion {
+   display: flex;
+   justify-content: center;
+   align-items:center;
+}
+.barra-separacion .vertical {
+    width: 0.2px;
+    height: 12em;
+    border: 1px dotted rgb(220, 220, 220);
+}
+
+@media only screen and (min-width: 900px) {
+    .container-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center; 
+    }
+}
+
